@@ -39,7 +39,7 @@ El proyecto no requiere dependencias externas, ya que utiliza únicamente la bib
 1. Asegúrate de tener los 3 archivos principales en la misma carpeta:
     - `reglas.json` (La base de conocimientos)
     - `sistema_experto.py` (El motor de lógica)
-    - `main_wizard.py` (La aplicación gráfica)
+    - `main.py` (La aplicación gráfica)
 
 2. Inicia la aplicación principal ejecutando:
    ```bash
