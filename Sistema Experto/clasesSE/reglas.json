@@ -1,0 +1,116 @@
+{
+  "reglas": [
+    {
+      "id": "R-NEUM-01",
+      "antecedents": [
+        ["fiebre", "==", "si", 0.9],
+        ["fiebre_grados", ">=", 38.5, 0.9],
+        ["tos_tipo", "==", "productiva", 0.85],
+        ["crepitantes", "==", "si", 0.95],
+        ["disnea", "==", "si", 0.8]
+      ],
+      "conclusion": "Neumonía",
+      "explicacion": "Fiebre alta, tos productiva, crepitantes y disnea.",
+      "recomendacion": "La neumonía puede ser grave. Descanse, beba muchos líquidos. Es crucial consultar a un médico, ya que podría necesitar antibióticos."
+    },
+    {
+      "id": "R-RINITIS-01",
+      "antecedents": [
+        ["estornudos", "==", "si", 0.9],
+        ["picor_ojos", "==", "si", 0.9],
+        ["congestion_nasal", "==", "si", 0.8],
+        ["fiebre", "==", "no", 0.95],
+        ["alergias", "==", "si", 0.85]
+      ],
+      "conclusion": "Rinitis Alérgica",
+      "explicacion": "Estornudos, picor de ojos y congestión sin fiebre en paciente alérgico.",
+      "recomendacion": "Evite los alérgenos conocidos (polen, polvo). Los antihistamínicos de venta libre pueden ayudar. Consulte a un alergólogo si los síntomas persisten."
+    },
+    {
+      "id": "R-COVID-01",
+      "antecedents": [
+        ["fiebre", "==", "si", 0.8],
+        ["tos", "==", "si", 0.7],
+        ["tos_tipo", "==", "seca", 0.8],
+        ["fatiga", "==", "si", 0.85],
+        ["anosmia", "==", "si", 0.95]
+      ],
+      "conclusion": "COVID-19",
+      "explicacion": "Fiebre, tos seca, fatiga y pérdida del olfato (anosmia).",
+      "recomendacion": "Aíslese para evitar contagios. Descanse, manténgase hidratado y monitoree su nivel de oxígeno. Consulte a un médico para confirmar el diagnóstico."
+    },
+    {
+      "id": "R-ASMA-01",
+      "antecedents": [
+        ["sibilancias", "==", "si", 0.9],
+        ["disnea", "==", "si", 0.8],
+        ["alergias", "==", "si", 0.85]
+      ],
+      "conclusion": "Asma",
+      "explicacion": "Sibilancias, disnea y antecedentes de alergia.",
+      "recomendacion": "Use su inhalador de rescate según lo prescrito. Evite los desencadenantes conocidos. Consulte a su médico para ajustar su plan de tratamiento."
+    },
+    {
+      "id": "R-GRIPE-01",
+      "antecedents": [
+        ["fiebre", "==", "si", 0.85],
+        ["fiebre_grados", ">=", 38.0, 0.8],
+        ["fatiga", "==", "si", 0.9],
+        ["dolor_muscular", "==", "si", 0.95],
+        ["tos", "==", "si", 0.7]
+      ],
+      "conclusion": "Influenza (Gripe)",
+      "explicacion": "Fiebre, fatiga intensa y dolor muscular.",
+      "recomendacion": "Mucho descanso e hidratación. Los analgésicos de venta libre (paracetamol, ibuprofeno) pueden aliviar los dolores y la fiebre. Consulte a un médico si los síntomas son severos."
+    },
+    {
+      "id": "R-FARING-01",
+      "antecedents": [
+        ["dolor_garganta", "==", "si", 0.9],
+        ["fiebre", "==", "si", 0.8],
+        ["ganglios_inflamados", "==", "si", 0.85],
+        ["tos", "==", "no", 0.95]
+      ],
+      "conclusion": "Faringitis Estreptocócica",
+      "explicacion": "Dolor de garganta severo con fiebre y sin tos.",
+      "recomendacion": "Haga gárgaras con agua salada tibia. Beba líquidos calientes. Es importante ver a un médico para una prueba, ya que podría necesitar antibióticos."
+    },
+    {
+      "id": "R-EPOC-01",
+      "antecedents": [
+        ["disnea", "==", "si", 0.85],
+        ["tos", "==", "si", 0.7],
+        ["fumador", "==", "si", 0.9],
+        ["edad", ">", 50, 0.8]
+      ],
+      "conclusion": "EPOC (Enf. Pulmonar Obstructiva Crónica)",
+      "explicacion": "Disnea crónica y tos en paciente fumador de más de 50 años.",
+      "recomendacion": "Dejar de fumar es la medida más importante. Use los medicamentos (inhaladores) prescritos por su médico. Consulte a un neumólogo."
+    },
+    {
+      "id": "R-SINUS-01",
+      "antecedents": [
+        ["congestion_nasal", "==", "si", 0.85],
+        ["dolor_facial", "==", "si", 0.9],
+        ["fiebre", "==", "si", 0.7],
+        ["tos", "==", "si", 0.7]
+      ],
+      "conclusion": "Sinusitis Aguda",
+      "explicacion": "Congestión nasal acompañada de dolor/presión facial.",
+      "recomendacion": "Use un humidificador o inhale vapor. Los lavados nasales con solución salina pueden ayudar. Consulte a un médico si la fiebre persiste o el dolor es severo."
+    },
+    {
+      "id": "R-BRONC-01",
+      "antecedents": [
+        ["tos", "==", "si", 0.8],
+        ["tos_duracion_dias", "<", 21, 0.8],
+        ["fiebre", "==", "no", 0.75],
+        ["sibilancias", "==", "no", 0.7],
+        ["crepitantes", "==", "no", 0.7]
+      ],
+      "conclusion": "Bronquitis Aguda",
+      "explicacion": "Tos aguda (menos de 3 semanas) sin fiebre alta ni hallazgos.",
+      "recomendacion": "Suele ser viral, por lo que los antibióticos no ayudan. Beba muchos líquidos calientes (té con miel) y descanse. Use un humidificador."
+    }
+  ]
+}
