@@ -18,14 +18,13 @@ El sistema permite:
 - Motor de Inferencia con **Encadenamiento Hacia Adelante** (Forward Chaining).
 - Base de Conocimientos (`reglas.json`) desacoplada que permite editar reglas sin tocar el código.
 - Cálculo dinámico de certeza mediante el **promedio de pesos de evidencia** de los síntomas.
-- Interfaz Gráfica de Usuario (GUI) con **Tkinter** en modo "asistente" (wizard) para una experiencia amigable.
+- Interfaz Gráfica de Usuario (GUI) con **Tkinter** en modo "asistente" para una experiencia amigable.
 - Lógica de cuestionario condicional (omite preguntas irrelevantes, ej. "temperatura" si "fiebre" es "no").
 - Formato de resultados claro que incluye:
     - Diagnóstico Principal (el de mayor %).
     - Otras Posibilidades (si las hay).
     - Recomendaciones de cuidado.
     - Aviso legal de consultar a un médico.
-- Script de validación (`validador.py`) para pruebas de precisión unitarias.
 
 ---
 
@@ -44,10 +43,6 @@ El proyecto no requiere dependencias externas, ya que utiliza únicamente la bib
 
 2. Inicia la aplicación principal ejecutando:
    ```bash
-   python main_wizard.py
+   python main.py
    ```
 
-3. (Opcional) Para verificar la lógica del motor, puedes ejecutar el script de validación:
-   ```bash
-   python validador.py
-   ```
