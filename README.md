@@ -37,8 +37,15 @@ Actualmente incluye:
 
 ---
 
-### 4. Próximamente 🗓️
-Se agregarán nuevos proyectos conforme se desarrollen en la materia.
+### 4. Sistema de Detección de Emociones Faciales 📸😊😡
+- Implementación de un sistema de **Visión por Computadora** basado en **Deep Learning** para detectar y clasificar 4 estados emocionales en tiempo real: Felicidad, Enojo, Tristeza y Neutralidad.
+- Desarrollado en **Python** utilizando **TensorFlow/Keras** para la red neuronal y **OpenCV** para el procesamiento de imagen.
+- Utiliza una **Red Neuronal Convolucional (CNN)** personalizada entrenada desde cero con un dataset **RGB balanceado (~9,200 imágenes)** para mayor robustez en entornos reales.
+- Características principales:
+  - **Preprocesamiento inteligente:** Aplica ecualización de histograma para normalizar la iluminación.
+  - **Lógica de inferencia avanzada:** Implementa umbrales de sensibilidad asimétricos para detectar micro-expresiones sutiles (como el enojo) y un filtro de estabilidad para evitar el parpadeo de etiquetas.
+  - Precisión de validación superior al **87.5%**.
+
 ---
 
 ### Autor 👨‍💻🏆
