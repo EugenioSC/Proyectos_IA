@@ -1,4 +1,4 @@
-# Sistema de Detección de Emociones Faciales (CNN) 📸🧠😊
+# Sistema de Detección de Emociones Faciales 📸🧠😊
 **Elaborado por:** Jesús Eugenio Soto Cortéz 🧑‍💻🎓
 
 ## 🔗 Enlaces del Proyecto (Descargas)
